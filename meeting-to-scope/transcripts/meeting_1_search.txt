@@ -1,0 +1,31 @@
+MEETING TRANSCRIPT A — PROJECT: CareConnect Medical Directory (Website Search & Mobile Improvements)
+Date: 2026-10-14
+Participants:
+- Sarah Jenkins (Client — Founder, CareConnect Medical Directory)
+- Alex Rivera (Senior Tech Consultant — Brilliant Directories Agency)
+
+[00:00:15] Alex Rivera (Consultant): Thanks for hopping on today, Sarah. I have your Brilliant Directories site pulled up. Walk me through what's frustrating your doctors and patients right now.
+
+[00:00:42] Sarah Jenkins (Client): Thanks Alex. Honestly, our main problem is that our website search isn't great. We have about 1,800 doctors and clinics listed across Texas, and patients tell us they can't find the right specialist fast enough. Right now it's just a basic keyword box.
+
+[00:01:18] Alex Rivera (Consultant): Got it. When patients are searching for a doctor, what specific filters do you want them to use?
+
+[00:01:35] Sarah Jenkins (Client): First, they need to filter by Medical Specialty and Sub-Specialty—like Cardiology, then Pediatric Cardiology—plus a Location Radius filter within say 25 miles of their ZIP code. Second, our patients really want to filter search results on the sidebar by Star Rating (like 4+ stars) and by whether the doctor has a Verified Member Badge.
+
+[00:02:20] Alex Rivera (Consultant): That makes total sense. Let me check our Brilliant Directories Knowledge Brain on those—I believe Category + Sub-Category + Location Radius and the Sidebar Star Rating / Verified Badge toggles are actually built-in settings we can configure without writing custom code, which will save you a lot of budget. What else is on your wishlist for search?
+
+[00:02:55] Sarah Jenkins (Client): Well, my co-founder saw a demo somewhere and said "maybe add AI search as well." Like where a patient types a whole paragraph about their symptoms and an AI chatbot recommends three doctors automatically.
+
+[00:03:30] Alex Rivera (Consultant): Okay, let's flag that carefully. Natural-language symptom matching isn't a built-in Brilliant Directories setting—it would require custom LLM API integration and also raises medical disclaimer questions. Is that AI symptom search a must-have for launch or an optional phase-2 idea?
+
+[00:03:58] Sarah Jenkins (Client): Let's include it in the initial quote so my co-founder can see what it costs, even though we haven't decided which symptom taxonomy or medical prompt rules we'd use yet.
+
+[00:04:25] Alex Rivera (Consultant): Understood—we'll mark the AI search criteria as needing clarification and separate its estimate so you can see the cost clearly. What about the mobile experience? You mentioned mobile in your email.
+
+[00:04:48] Sarah Jenkins (Client): Yes! Over 70% of our patients browse on their phones. Right now on mobile, the big search box takes up the whole top screen, and the sidebar widgets clutter the page above the doctor results. We just want the mobile homepage search box collapsed neatly inside a button, a clean slide-out drawer menu, and the cluttering sidebar widgets hidden on mobile phones.
+
+[00:05:35] Alex Rivera (Consultant): And also, we uploaded a new logo last week, and it looks blurry on Retina screens—can your team upload our crisp PNG logo at the right dimensions and set up our 32x32 favicon?
+
+[00:06:02] Alex Rivera (Consultant): Absolutely. What are your target timeline and budget constraints for getting this live?
+
+[00:06:20] Sarah Jenkins (Client): Ideally we want this live in 4 weeks (by November 15), and we're hoping to keep the budget reasonable—around $1,500 to $3,500 depending on how much is built-in configuration versus custom code.

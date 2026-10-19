@@ -1,0 +1,23 @@
+MEETING TRANSCRIPT C (FOLLOW-UP TO MEETING A) — PROJECT: CareConnect Medical Directory
+Date: 2026-10-17
+Participants:
+- Sarah Jenkins (Client — Founder, CareConnect Medical Directory)
+- Alex Rivera (Senior Tech Consultant — Brilliant Directories Agency)
+
+[00:00:12] Alex Rivera (Consultant): Hi Sarah! Thanks for reviewing our initial approved Scope of Work from Tuesday. You mentioned your board met yesterday and wants to make a few changes to the scope and timeline?
+
+[00:00:35] Sarah Jenkins (Client): Yes, Alex. First, the good news: we want to KEEP the built-in Medical Specialty, Sub-Specialty, 25-mile Location Radius, and Sidebar Star Rating / Verified Badge filters, plus the crisp 300x80 logo and favicon setup.
+
+[00:01:05] Sarah Jenkins (Client): Second, we want to REMOVE the "AI symptom search chatbot" requirement completely. Once our legal counsel saw the cost and medical liability of AI symptom matching, we decided to drop it 100%.
+
+[00:01:38] Alex Rivera (Consultant): Smart move—dropping the custom AI symptom search will remove that custom LLM work from the estimate. What changed on the mobile requirements?
+
+[00:01:55] Sarah Jenkins (Client): On mobile, instead of just using the built-in mobile settings to hide sidebar widgets, our board decided we MUST have a custom native-app-style sticky bottom-sheet filter drawer on mobile phones that updates the doctor count live via AJAX without reloading the page when patients toggle checkboxes.
+
+[00:02:40] Alex Rivera (Consultant): Got it—so REQ-003 (Mobile Experience) is changing from simple built-in mobile configuration to custom frontend JavaScript/AJAX widget development. Anything new added?
+
+[00:03:02] Sarah Jenkins (Client): Yes, one brand-new requirement that wasn't in our first meeting: we just acquired a list of 2,200 Texas doctors in a CSV spreadsheet. We need you to bulk import those 2,200 doctors via CSV AND build a custom automated script that checks each doctor's Texas Medical Board license number against an external state API before activating their profile.
+
+[00:03:50] Alex Rivera (Consultant): Hold on—bulk importing up to 2,500 members via CSV is a built-in Brilliant Directories tool, rapid and cheap. However, building an automated external Texas Medical Board license verification script during CSV import is NOT built-in and was not in our original approved baseline scope. We will flag that custom license verification as Out-of-Scope / Additional Quotation required.
+
+[00:04:25] Sarah Jenkins (Client): Understood, please show clearly what is in the original baseline versus what costs extra. Oh, and one last change: because of a medical conference in Austin, we need the launch deadline moved up by 2 weeks—from November 15 to November 1!

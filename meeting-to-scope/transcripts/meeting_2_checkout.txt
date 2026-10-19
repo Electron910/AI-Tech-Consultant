@@ -1,0 +1,25 @@
+MEETING TRANSCRIPT B — PROJECT: BuildPro Trade Marketplace (Checkout, Notifications & Payment Gateway)
+Date: 2026-10-15
+Participants:
+- Viktor Lindqvist (Client — Operations Director, BuildPro Trade Marketplace)
+- Alex Rivera (Senior Tech Consultant — Brilliant Directories Agency)
+
+[00:00:10] Alex Rivera (Consultant): Hi Viktor, great to meet you. Today we're scoping the checkout workflow, lead notifications, and payment gateway setup for BuildPro. What are the core changes you need?
+
+[00:00:38] Viktor Lindqvist (Client): Hi Alex. First, on our Member Sign Up checkout form, we need to collect a mandatory 'Contractor License Number' field and allow new members to enter a 20% Black Friday promo coupon code for annual plans.
+
+[00:01:12] Alex Rivera (Consultant): Good news there—adding a custom field to the Member Sign Up Form via Form Manager and setting up percentage promo codes via the Coupon Codes Add-On are both built-in Brilliant Directories features. What about order and lead notifications?
+
+[00:01:45] Viktor Lindqvist (Client): Right now, when a homeowner submits a roofing or plumbing lead, the contractor only gets the default email, and they complain it looks generic and arrives after they're already on a job site. First, we want to customize the automated email template (`lead-notification-member`) with our branding. Second, we want an instant Twilio SMS and WhatsApp message sent to the contractor's phone the second a lead is matched.
+
+[00:02:35] Alex Rivera (Consultant): Customizing the email template is built-in, while Twilio SMS and WhatsApp alerts aren't native—we'll scope a custom webhook integration for Twilio. Do you already have a verified Twilio WhatsApp Business sender account?
+
+[00:03:00] Viktor Lindqvist (Client): Not yet, our IT team is still applying for Meta WhatsApp approval—that might take a couple of weeks.
+
+[00:03:20] Alex Rivera (Consultant): Okay, we'll record that external dependency. Now let's talk about payment gateways. Which payment processor are you using?
+
+[00:03:40] Viktor Lindqvist (Client): We use Stripe for credit cards in the US, which we want configured properly with webhooks and SSL so invoices never get stuck as Unpaid. However, for our retail partner division, our CFO asked if we can also integrate Sensepass or Razorpay on the checkout page.
+
+[00:04:20] Alex Rivera (Consultant): Let's be super clear on that: Stripe is natively supported out of the box (we just enable `force_ssl_checkout` and configure the `/api/widget/json/get/stripe-webhook` endpoint). However, Sensepass and Razorpay are NOT natively supported by Brilliant Directories. Adding an external gateway requires building a custom hosted-checkout redirect flow using webhooks and the `/api/v2/user/create` REST API.
+
+[00:05:05] Viktor Lindqvist (Client): Understood. Put both the native Stripe setup and the custom external payment gateway webhook workflow in the scope so our CFO can see the hour breakdown and approve it before we start.
